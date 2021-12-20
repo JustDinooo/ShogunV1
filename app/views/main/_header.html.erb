@@ -9,6 +9,21 @@
         <li class="nav-item">
           <%= link_to "About", about_path, class:"nav-link" %>
         </li>
+      </ul>
+       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <% if Current.user %>
+            <span class="navbar-text"><%= Current.user.email %></span>
+            <%= button_to "sign out", log_out_path, method: :delete, class:"btn btn-outline-secondary" %>
+          
+          <% else %>
+             <li class="nav-item">
+                <%= link_to "Sign Up", sign_up_path, class:"nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "Sign In", sign_in_path, class:"nav-link" %>
+              </li>
+          <% end %>
+        </ul>
     </div>
   </div>
 </nav>
