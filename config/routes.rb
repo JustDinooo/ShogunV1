@@ -8,7 +8,10 @@ Rails.application.routes.draw do
 	post "sign_in", to: "sessions#create"
 	
 	delete "log_out", to: "sessions#destroy"
-	
+
+	get "shogun", to: "operations#new"
+	post "shogun", to: "operations#search"
+
 	root to: "main#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
