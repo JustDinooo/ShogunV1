@@ -1,24 +1,9 @@
-# README
+# ShogunV1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello, my name is *Yessine Ben Tkhayat*. I'm a 3rd year networks and systems engineering student, and a cybersecurity enthusiast.
+This is my first ever ruby on rails project **ShogunV1**
 
-Things you may want to cover:
+1. It contains sign up and a sign in forms
+2. Once logged in you can use shodan service
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**V1?**.. Yes you guessed it, **V2** will be available soon as I plan to enhance some features and add ones. 😉
