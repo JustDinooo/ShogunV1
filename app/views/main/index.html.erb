@@ -1,3 +1,12 @@
 <h1>Welcome to ShogunV1...</h1>
+<br/>
+<% if Current.user %>
 
+	<p><%= "hello there " + Current.user.email %></p>
+	<span>Hope you are satisfied with our service</span>
+
+<% else %>
+	<p>Please login so you can use our sevice!</p>
+
+<% end %>
 

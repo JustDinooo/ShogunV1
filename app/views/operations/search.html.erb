@@ -1,18 +1,20 @@
-<div>
-	
-	<div>IP: <%= @host['ip_str'] %><br/>
-		Country: <%= @host['country_name'] || 'n/a' %><br/>
-		City: <%= @host['city'] || 'n/a' %><br/>
-		Organization: <%= @host['org'] || 'n/a' %><br/>
-		Operating System: <%= @host['os'] || 'n/a' %><br/>
-		
-		<% @host['data'].each do |item| %>
-			Port: <%= item['port'] || 'n/a' %> <br/>
+<div class="card">
+  <div class="card-header">
+    <h3>IP: <%= @host['ip_str'] %></h3>
+  </div>
+  <div class="card-body">
+    <p>Country: <%= @host['country_name'] || 'n/a' %></p>
+    <p>City: <%= @host['city'] || 'n/a' %></p>
+    <p>Organization: <%= @host['org'] || 'n/a' %></p>
+    <p>Operating System: <%= @host['os'] || 'n/a' %></p>
+    <% @host['data'].each do |item| %>
+    	<div>
+    		<br/>
+    		Port: <%= item['port'] || 'n/a' %> <br/>
 			Banner: <%= item['data'] || 'n/a' %> <br/>
-			
-		<% end %>
-	</div>
+		<div>
+	<% end %>
+  </div>
 </div>
-<br/>
 
- <!-- <p><%= @host %></p> -->
+
