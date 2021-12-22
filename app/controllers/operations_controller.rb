@@ -1,6 +1,11 @@
 class OperationsController < ApplicationController
 
 	def new	
+		if Current.user
+			render :new
+		else
+			redirect_to sign_in_path, notice: "Please Sign in so you can use our service"
+		end
 	end
 
 	def search

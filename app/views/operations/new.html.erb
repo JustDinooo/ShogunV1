@@ -1,15 +1,13 @@
-<% if Current.user %>
-	<%= form_with url: shogun_path do |f| %>
-		<div class="col-auto">
-			<%= f.label :"Enter IP" %>
-	        <%= f.text_field :IP, class: "form-control" %>
-	        <br/>
-	    </div>
-	    <div class="col-auto">
-	        <%= f.submit "Shogun!", class:"btn btn-primary mb-3" %>
-	    </div>
-	 <% end %>
- <% else %>
-	<span>Please Sign in so you can use our service</span>
+<%= form_with url: shogun_path do |f| %>
+	<div class="col-auto">
+		<%= f.label :"Enter IP" %>
+	    <%= f.text_field :IP, class: "form-control" %>
+	    <br/>
+	</div>
+	
+	 <div class="col-auto">
+	    <%= f.submit "Shogun!", class:"btn btn-primary mb-3" %>
+	</div>
 <% end %>
+ 
 

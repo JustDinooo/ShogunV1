@@ -8,7 +8,7 @@ class RegistrationsController < ApplicationController
 		@user = User.new(whitelisted_user_params)
 		if @user.save
 			session[:user_id] = @user.id
-			redirect_to root_path, notice: "Successfully signed up"
+			redirect_to root_path, notice: "Signed up successfully!"
 		else
 			#flash[:alert]
 			render :new
