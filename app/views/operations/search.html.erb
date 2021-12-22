@@ -1,0 +1,18 @@
+<div>
+	
+	<div>IP: <%= @host['ip_str'] %><br/>
+		Country: <%= @host['country_name'] || 'n/a' %><br/>
+		City: <%= @host['city'] || 'n/a' %><br/>
+		Organization: <%= @host['org'] || 'n/a' %><br/>
+		Operating System: <%= @host['os'] || 'n/a' %><br/>
+		
+		<% @host['data'].each do |item| %>
+			Port: <%= item['port'] || 'n/a' %> <br/>
+			Banner: <%= item['data'] || 'n/a' %> <br/>
+			
+		<% end %>
+	</div>
+</div>
+<br/>
+
+ <!-- <p><%= @host %></p> -->
