@@ -1,12 +1,10 @@
-<h1>Welcome to ShogunV1...</h1>
+<h1><em>Welcome to ShogunV1...</em></h1>
 <br/>
 <% if Current.user %>
 
-	<p><%= "hello there " + Current.user.email %></p>
-	<span>Hope you are satisfied with our service</span>
+	<p>Hello<em class="fw-bold"><%= " " + Current.user.email %></em></p>
+	<p>Hope you are satisfied with our service ^__^</p>
 
 <% else %>
-	<p>Please login so you can use our sevice!</p>
-
+	<p class="font-monospace">Please log in so you can use our sevice!</p>
 <% end %>
-
