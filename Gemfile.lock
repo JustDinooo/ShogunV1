@@ -120,6 +120,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.5-x64-mingw32)
       racc (~> 1.4)
+    pg (1.2.3)
     protocol-hpack (1.4.2)
     protocol-http (0.21.0)
     protocol-http1 (0.13.2)
@@ -234,6 +235,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   jbuilder (~> 2.7)
+  pg (~> 1.2, >= 1.2.3)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.4)
