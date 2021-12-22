@@ -6,4 +6,4 @@ This is my first ever ruby on rails project **ShogunV1**
 1. It contains sign up and a sign in forms
 2. Once logged in you can use shodan service
 
-**V1?**.. Yes you guessed it, **V2** will be available soon as I plan to enhance some features and add ones. 😉
+**V1?**.. Yes you guessed it, **V2** will be available soon as I plan to enhance some features and add new ones. 😉
