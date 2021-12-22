@@ -19,7 +19,8 @@ class OperationsController < ApplicationController
 			#render plain: "#{params[:IP]}"
 			render :search
 		else
-			render :new, notice: "enter a valid ip address!"
+			flash[:alert] = "Please enter a valid ip address!"
+			render :new
 		end
 	end
 
