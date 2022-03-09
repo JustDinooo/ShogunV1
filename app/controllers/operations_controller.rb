@@ -10,7 +10,7 @@ class OperationsController < ApplicationController
 
 	def search
 		#require "shodanz"
-		api = Shodanz.client.new(key: "oEghZYqiofqOQqKlRhlmMnhPfFjrmpza")
+		api = Shodanz.client.new(key: "$SHODAN_API_KEY")
 
 		ip = params[:IP]
 		if verif_ip(ip)
