@@ -7,3 +7,5 @@ This is my first ever ruby on rails project **ShogunV1**
 2. Once logged in you can use shodan service
 
 **V1?**.. Yes you guessed it, **V2** will be available soon as I plan to enhance some features and add new ones. 😉
+
+## [https://shogunv1.herokuapp.com/]
